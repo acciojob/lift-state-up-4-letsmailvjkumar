@@ -39,7 +39,7 @@ const App = () => {
           <h2>Child Component</h2>
           <ul>
             {items.map((item, index) => (
-              <li key={index}>{item.name} - ${item.price} <button onClick={() => handleRemoveItem(index)}>Remove</button></li> 
+              <li key={index} className="child li">{item.name} - ${item.price} <button onClick={() => handleRemoveItem(index)}>Remove</button></li> 
             ))}
           </ul>
         </div>
